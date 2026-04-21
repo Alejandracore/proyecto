@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas Frecuentes</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* ✨ EFECTO LEVANTAR CARDS */
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+
+    /* ✨ ICONOS ANIMADOS */
+    .icon-anim {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover .icon-anim {
+      transform: rotate(10deg) scale(1.2);
+      filter: drop-shadow(0 0 6px #ec4899);
+    }
+  </style>
+
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h2 class="text-4xl font-bold mb-4">
+        Preguntas <span class="text-pink-400">Frecuentes</span>
+      </h2>
+
+      <p class="text-gray-400 max-w-2xl mx-auto mb-12">
+        Hemos reunido las preguntas que más nos hacen nuestros clientes para que encuentres la
+        solución que necesitas al instante. ¿Aún tienes preguntas? ¡Contáctanos!
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Card -->
+        <div class="card-hover p-[1px] rounded-xl bg-gradient-to-r from-pink-600 to-transparent">
+          <div class="bg-gray-800 p-6 rounded-xl h-full">
+            <h3 class="flex items-center gap-2 text-xl font-semibold text-pink-400 mb-2">
+              <i data-lucide="help-circle" class="w-5 h-5 icon-anim"></i>
+              ¿Qué es tu plataforma?
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Nevekley es una plataforma en la nube diseñada para ayudarte a gestionar
+              tus tareas, proyectos o procesos de trabajo de forma más sencilla y eficiente.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="card-hover p-[1px] rounded-xl bg-gradient-to-r from-pink-600 to-transparent">
+          <div class="bg-gray-800 p-6 rounded-xl h-full">
+            <h3 class="flex items-center gap-2 text-xl font-semibold text-pink-400 mb-2">
+              <i data-lucide="headphones" class="w-5 h-5 icon-anim"></i>
+              ¿Ofrecen soporte?
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Sí, ofrecemos soporte técnico especializado para ayudarte con cualquier
+              problema o duda sobre el uso de Nevekley. Puedes comunicarte por WhatsApp
+              al +1 (829) 526-1666 o por correo a soporte@nevekley.com
+            </p>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="card-hover p-[1px] rounded-xl bg-gradient-to-r from-pink-600 to-transparent">
+          <div class="bg-gray-800 p-6 rounded-xl h-full">
+            <h3 class="flex items-center gap-2 text-xl font-semibold text-pink-400 mb-2">
+              <i data-lucide="globe" class="w-5 h-5 icon-anim"></i>
+              ¿Dónde funciona?
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Nevekley funciona en cualquier país, ya que es una plataforma web accesible
+              desde cualquier navegador.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="card-hover p-[1px] rounded-xl bg-gradient-to-r from-pink-600 to-transparent lg:col-start-1">
+          <div class="bg-gray-800 p-6 rounded-xl h-full">
+            <h3 class="flex items-center gap-2 text-xl font-semibold text-pink-400 mb-2">
+              <i data-lucide="file-text" class="w-5 h-5 icon-anim"></i>
+              ¿Cómo solicitar?
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Para solicitar un presupuesto personalizado, sólo tienes que enviarnos un correo
+              a servicios@nevekley.com o escribirnos por WhatsApp al +1 (829) 526-1666.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="card-hover p-[1px] rounded-xl bg-gradient-to-r from-pink-600 to-transparent lg:col-start-3">
+          <div class="bg-gray-800 p-6 rounded-xl h-full">
+            <h3 class="flex items-center gap-2 text-xl font-semibold text-pink-400 mb-2">
+              <i data-lucide="x-circle" class="w-5 h-5 icon-anim"></i>
+              ¿Puedo cancelar?
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Sí, puedes cancelar o cambiar tu plan cuando lo desees desde tu panel de usuario.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTONES -->
+      <div class="mt-16 flex flex-col sm:flex-row justify-center gap-4">
+
+        <a href="Contactos.HTML"
+          class="bg-pink-600 hover:bg-pink-700 px-8 py-3 rounded-lg font-semibold transition shadow-lg shadow-pink-600/40 hover:scale-105">
+          Contáctanos
+        </a>
+
+        <a href="javascript:history.back()"
+          class="bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded-lg font-semibold transition shadow-lg hover:scale-105">
+          Volver a Inicio
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+
+</html>

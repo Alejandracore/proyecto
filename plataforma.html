@@ -58,46 +58,39 @@
       </div>
 
     </div>
-
     <!-- LADO DERECHO -->
     <div class="w-1/2 bg-gray-800 p-10 text-white">
 
-      <h2 class="text-3xl font-bold mb-6 text-center">Registro</h2>
+      <h2 class="text-3xl font-bold mb-6 text-center">Iniciar Sesión</h2>
 
-      <form action="registro.php" method="POST" class="space-y-5">
+      <form action="validar.php" method="POST" class="space-y-5">
 
-        <input type="text" name="nombre" placeholder="Nombre" required
-          class="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-pink-500">
-
-        <input type="email" name="correo" placeholder="Correo" required
-          class="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-pink-500">
-
-        <input type="text" name="usuario" placeholder="Usuario"
-          class="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-pink-500">
+        <input type="email" name="correo" placeholder="Correo"
+          class="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-pink-500"
+          required>
 
         <div class="relative">
-          <input id="pass-reg" type="password" name="password" placeholder="Contraseña"
-            class="w-full px-4 py-2 pr-11 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-pink-500">
-          <button type="button" onclick="togglePass('pass-reg','eye-reg')"
+          <input id="pass-login" type="password" name="password" placeholder="Contraseña"
+            class="w-full px-4 py-2 pr-11 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-pink-500"
+            required>
+          <button type="button" onclick="togglePass('pass-login','eye-login')"
             class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-pink-400 transition">
-            <svg id="eye-reg" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
+            <svg id="eye-login" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M15 12a3 3 0 11-6 0 3 3 0 016 0zm-3 9C6.477 21 2 12 2 12s4.477-9 10-9 10 9 10 9-4.477 9-10 9z" />
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0zm-3 9C6.477 21 2 12 2 12s4.477-9 10-9 10 9 10 9-4.477 9-10 9z"/>
             </svg>
           </button>
         </div>
 
-        <button type="submit"
-          class="w-full bg-pink-600 hover:bg-pink-500 py-2 rounded-lg font-bold transition duration-300">
-          Registrarse
+        <button class="w-full bg-pink-600 hover:bg-pink-500 py-2 rounded-lg font-bold transition duration-300">
+          Iniciar sesión
         </button>
 
       </form>
 
       <p class="text-center text-gray-400 mt-5">
-        ¿Ya tienes cuenta?
-        <a href="plataforma.html" class="text-pink-400 hover:underline">Inicia sesión</a>
+        ¿No tienes cuenta?
+        <a href="Inicio-seccion.HTML" class="text-pink-400 hover:underline">Regístrate</a>
       </p>
 
       <div class="text-center mt-3">
@@ -110,19 +103,19 @@
 
   </div>
 
-  <script>
-    function togglePass(inputId, iconId) {
-      const input = document.getElementById(inputId);
-      const icon = document.getElementById(iconId);
-      if (input.type === 'password') {
-        input.type = 'text';
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-5.523 0-10-9-10-9a18.02 18.02 0 014.274-5.274M9.879 9.879A3 3 0 0114.12 14.12M3 3l18 18"/>';
-      } else {
-        input.type = 'password';
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0zm-3 9C6.477 21 2 12 2 12s4.477-9 10-9 10 9 10 9-4.477 9-10 9z"/>';
-      }
+<script>
+  function togglePass(inputId, iconId) {
+    const input = document.getElementById(inputId);
+    const icon  = document.getElementById(iconId);
+    if (input.type === 'password') {
+      input.type = 'text';
+      icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-5.523 0-10-9-10-9a18.02 18.02 0 014.274-5.274M9.879 9.879A3 3 0 0114.12 14.12M3 3l18 18"/>';
+    } else {
+      input.type = 'password';
+      icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0zm-3 9C6.477 21 2 12 2 12s4.477-9 10-9 10 9 10 9-4.477 9-10 9z"/>';
     }
-  </script>
+  }
+</script>
 </body>
 
 </html>
